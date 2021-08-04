@@ -1,7 +1,7 @@
 //https://www.hackerrank.com/challenges/equality-in-a-array/problem
 
 func equalizeArray(arr []int32) int32 {
-	var num, sum1, sum2 int32
+	var sum1, sum2 int32
 	sum2 = 0
 
 	for i:=0; i<len(arr); i++ {
