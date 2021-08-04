@@ -5,10 +5,9 @@ func equalizeArray(arr []int32) int32 {
 	sum2 = 0
 
 	for i:=0; i<len(arr); i++ {
-		num = arr[i]
 		sum1 = 1
 		for j:=i+1; j<len(arr); j++ {
-			if num == arr[j] {
+			if arr[i] == arr[j] {
 				sum1++
 			}
 		}
