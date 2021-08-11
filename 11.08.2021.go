@@ -1,7 +1,7 @@
 //https://www.hackerrank.com/challenges/service-lane/problem
 
 func serviceLane(width []int32, cases [][]int32) []int32 {
-	var min int32 = 0
+	var min int32
 	var sl []int32
 	for i:=0; i< len(cases); i++ {
 		min = width[cases[i][0]]
