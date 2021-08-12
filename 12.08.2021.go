@@ -12,12 +12,12 @@ func encryption(s string) string {
 	if decpart != 0 {
 		row = int(sqr)
 		col = int(sqr+1)
+		if col * row < len(s) {
+            		row++
+        	}
 	}else {
 		row = int(intpart)
 		col = int(intpart)
-	}
-	if col * row < len(s) {
-		row++
 	}
 
 	s1 = strings.Split(s, "")
