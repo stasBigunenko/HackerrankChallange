@@ -1,28 +1,31 @@
 //https://www.hackerrank.com/challenges/encryption/problem
 
-//needed additional import math to find square root
-
 func encryption(s string) string {
 	var row, col int
 	var res string
 	var s1 []string
-
-	sqr := math.Sqrt(float64(len(s)))
-	intpart, decpart := math.Modf(sqr)
-	if decpart != 0 {
-		row = int(sqr)
-		col = int(sqr+1)
-		if col * row < len(s) {
-            		row++
-        	}
+	
+	i := len(s)/2
+	for ; i>0; i-- {
+		if i * i <= len(s) {
+			break
+		}
+	}
+	
+	if i * i == len(s) {
+		row = i
+		col = i
 	}else {
-		row = int(intpart)
-		col = int(intpart)
+		row = i
+		col = i + 1
+		if row * col < len(s) {
+			row++
+		}
 	}
 
 	s1 = strings.Split(s, "")
-
-	for i:=0; i<col; i++ {
+	
+	for i=0; i<col; i++ {
 		k := i
 		for j:=0; j<row; j++ {
 			if k < len(s) {
