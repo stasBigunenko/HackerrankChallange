@@ -9,12 +9,12 @@ func repeatedString(s string, n int64) int64 {
 		}
 	}
 
-	p := n / int64(len(s))
-	count = count * p
+	k := n / int64(len(s))
+	count = count * k
 
-	k := n % int64(len(s))
+	k = n % int64(len(s))
 	if k != 0 {
-		for i:=0;i<int(k); i++ {
+		for i:=0; i<int(k); i++ {
 			if s[i] == 'a' {
 				count++
 			}
