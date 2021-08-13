@@ -22,4 +22,3 @@ func repeatedString(s string, n int64) int64 {
 	}
 	return count
 }
-	}
