@@ -4,7 +4,7 @@ func pangrams(s string) string {
 	count:= [26]int{}
 	var res string = "pangram"
 
-	str := strings.ToLower(s)
+	s = strings.ToLower(s)
 
 	for _, val := range str {
 		if val >= 'a' && val <= 'z' {
