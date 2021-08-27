@@ -6,7 +6,7 @@ func pangrams(s string) string {
 
 	s = strings.ToLower(s)
 
-	for _, val := range str {
+	for _, val := range s {
 		if val >= 'a' && val <= 'z' {
 			count[val-'a'] = 1
 		}
