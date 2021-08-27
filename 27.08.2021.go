@@ -14,6 +14,7 @@ func pangrams(s string) string {
 	for i:=0; i < 26; i++ {
 		if count[i] != 1 {
 			res = "not pangram"
+			break
 		}
 	}
 	return res
