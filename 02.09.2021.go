@@ -17,9 +17,11 @@ func hackerrankInString(s string) string {
 				break
 			}
 		}
-		if count ==10 {
-			res = "YES"
-		}
 	}
+	
+	if count == 10 {
+		res = "YES"
+	}
+	
 	return res
 }
