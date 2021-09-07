@@ -1,4 +1,4 @@
-//https://www.hackerrank.com/challenges/game-of-thrones/problem
+//https://www.hackerrank.com/challenges/two-strings/problem
 
 func twoStrings(s1 string, s2 string) string {
 	str := [26]int{0}
